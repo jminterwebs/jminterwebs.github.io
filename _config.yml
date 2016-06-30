@@ -1,0 +1,21 @@
+# Site settings
+title: Building the Interwebs
+header-img: img/home-bg.png
+email: jmverdone@gmail.com
+copyright_name: jminterwebs
+description: > # this means to ignore newlines until "baseurl:"
+  One Line at a Time
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: jminterwebs
+github_username:  jminterwebs
+learn_profile: jminterwebs
+email_username: jmverdone@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
