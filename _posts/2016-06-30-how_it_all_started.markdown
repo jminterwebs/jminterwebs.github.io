@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How it all started"
-date:   2016-06-30 03:55:58 +0000
+date:   2016-06-29 23:55:58 -0400
 ---
 
 I have been teaching myself programming for quite a few years. It has had its ups, downs, and some long periods where I walked away. Nights with very little sleep, and even a few where I called it quits only to wake up at 2:00am and try something I just thought of. Learn is my final steps in a long awaited goal, to fully polish off my skills and transition into a career as a developer. 
