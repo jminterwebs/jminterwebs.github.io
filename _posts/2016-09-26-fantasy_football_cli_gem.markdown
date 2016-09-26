@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fantasy Football CLI gem"
-date:   2016-09-26 01:21:41 +0000
+date:   2016-09-25 21:21:42 -0400
 ---
 
 
