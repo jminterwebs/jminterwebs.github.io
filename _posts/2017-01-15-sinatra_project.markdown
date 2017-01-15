@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sinatra Project."
-date:   2017-01-15 01:17:27 +0000
+date:   2017-01-14 20:17:28 -0500
 ---
 
 
@@ -104,8 +104,8 @@ I need to pass on 2 peices of data. Who the user is and what the scotch is. To d
 
 For comments I wanted to have a user only leave one comment per scotch. To achive this i need to check to see if the whome ever is logged in has already left a comment. 
 
-`redirect to  "/scotch/#{@scotch.slug}" unless !@scotch.comments.find_by(user_id: current_user.id)
-`
+```redirect to  "/scotch/#{@scotch.slug}" unless !@scotch.comments.find_by(user_id: current_user.id)
+```
 
 This line of code took care of it for me by redirecting back to the scotch page unless a user did not leave a comment. 
 
