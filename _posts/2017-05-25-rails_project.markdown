@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Rails project
-date:   2017-05-25 02:38:54 +0000
+date:   2017-05-24 22:38:55 -0400
 ---
 
 
