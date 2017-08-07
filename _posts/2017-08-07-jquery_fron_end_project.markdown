@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JQuery Fron End Project"
-date:   2017-08-07 00:34:09 +0000
+date:   2017-08-06 20:34:10 -0400
 ---
 
 
@@ -18,6 +18,80 @@ As you can imagine the above could be very problematic when you need things to b
 
 
 
+
+Prototypes makes life easier sometimes. For my main navigation between Whiskeys, Distillers, and Regions. 
+
+```
+indexMaker = () => {
+      $('nav a').on('click', function(event){
+        event.preventDefault()
+        let className = this.className
+        if( className != "newWhiskey"){
+      $.get(`/${className}`, function(data){
+        let indexLists = new IndexLists()
+
+          switch (className){
+
+            case "whiskeys":
+              indexLists.whiskeyList(data);
+              break;
+            case "distillers":
+              indexLists.distillerList(data);
+              break;
+            case "regions":
+              indexLists.regionList(data)
+              break;
+          }
+      })
+    }
+      })
+
+}
+```
+
+as you can see I also used `this` to pull the class name off the link that also corasonded to the proper route. I then used a switch statement to call the right method on the newly created indexLists. which then called the following code. 
+
+```
+IndexLists.prototype.whiskeyList = function(data){
+
+  let whiskeyList = []
+
+    for( let i=0; i <= data.length-1; i ++){
+
+     whiskeyList.push(`<li id="${data[i].id}"> ${data[i].name} <span onCLick="addtoFavorites(${data[i].id})"> Add to Favorites </span> <span onClick="showInfo(${data[i].id})"> More info </li>`)
+    }
+
+  $('.showList').empty()
+  $('.indexList').show().empty().append(whiskeyList)
+
+}
+
+IndexLists.prototype.distillerList = function(data){
+
+  let distillerList = []
+    for(let i=0; i <= data.length-1; i ++){
+    distillerList.push(`<li> ${data[i].name} </li>`)
+    }
+  $('.showList').empty()
+  $('.indexList').show().empty().append(distillerList)
+
+}
+
+IndexLists.prototype.regionList = function(data){
+
+  let regionList = []
+    for(let i=0; i <= data.length-1; i ++){
+    regionList.push(`<li> ${data[i].country} </li>`)
+    }
+  $
+  $('.showList').empty()
+  $('.indexList').show().empty().append(regionList)
+
+}
+
+```
+
+For the rest of the project I did run into some diffuclties at certain parts but nothing that I couldn't over come with relative east. Even my nested form to created new whiskeys was refactored to Jquery with out much of a problem. However I know I have several areas I can refactor for much cleaner code. But that for now is for another blog post and another day.
 
 
 
