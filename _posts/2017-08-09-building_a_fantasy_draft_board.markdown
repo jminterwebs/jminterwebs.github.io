@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building a Fantasy Draft Board"
-date:   2017-08-09 01:58:44 +0000
+date:   2017-08-08 21:58:45 -0400
 ---
 
 
