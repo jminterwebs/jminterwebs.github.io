@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Belongs_to and Rails 5"
-date:   2017-08-10 18:48:27 +0000
+date:   2017-08-10 14:48:28 -0400
 ---
 
 
